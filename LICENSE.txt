@@ -1,0 +1,17 @@
+WongCilik Proprietary License  
+Copyright © 2025 Mahathir Syakiib Alhafidz  
+All rights reserved.
+
+This software, including its source code, design, concept, and content, is the exclusive intellectual property of Mahathir Syakiib Alhafidz.
+
+Public access to the website is permitted for personal and commercial use through the official platform at https://datonecoolguy.github.io/WongCilik/.
+
+Users may engage in trading, buying, and selling activities as intended by the platform’s design. However, reproduction, modification, redistribution, reverse engineering, or commercial use of the source code, design, or concept outside of this platform is strictly prohibited without prior written consent from the copyright owner.
+
+This license does not grant any rights to use the WongCilik name, logo, or branding for any purpose without express authorization.
+
+For licensing inquiries, partnership proposals, or legal permissions, contact: mahathiralhafidz@gmail.com
+
+Signed:  
+Mahathir Syakiib Alhafidz  
+Date: 13/09/2025
