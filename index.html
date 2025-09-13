@@ -18,51 +18,115 @@
       padding: 20px;
       text-align: center;
     }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WongCilik Crop Exchange</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      color: #1c1c1e;
+    }
+    header {
+      background-color: #0b3d2e;
+      color: white;
+      padding: 24px;
+      text-align: center;
+    }
     nav {
-      background-color: #388e3c;
-      padding: 10px;
+      background-color: #145c43;
+      padding: 12px;
       text-align: center;
     }
     nav a {
       color: white;
-      margin: 0 15px;
+      margin: 0 20px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 14px;
     }
     .hero {
-      background: linear-gradient(to right, #a5d6a7, #81c784);
+      background-color: #e6f2ec;
       padding: 60px 20px;
       text-align: center;
     }
     .hero h2 {
       margin: 0;
-      font-size: 2em;
+      font-size: 32px;
+      font-weight: 700;
+    }
+    .hero p {
+      font-size: 16px;
+      margin-top: 12px;
+      color: #3c3c3c;
     }
     .section {
       padding: 40px 20px;
-      max-width: 1000px;
+      max-width: 960px;
       margin: auto;
+    }
+    .crop-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
     }
     .crop-card {
       background-color: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 20px;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 24px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+      transition: box-shadow 0.2s ease;
+    }
+    .crop-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
     .crop-card h3 {
       margin-top: 0;
+      font-size: 20px;
+      font-weight: 600;
     }
     .price {
-      font-weight: bold;
-      color: #2e7d32;
+      font-weight: 700;
+      font-size: 18px;
+      color: #0b3d2e;
+      margin: 12px 0;
+    }
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .actions button {
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      background-color: #145c43;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    .actions button:hover {
+      background-color: #0b3d2e;
     }
     footer {
-      background-color: #2e7d32;
+      background-color: #0b3d2e;
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 24px;
+      margin-top: 60px;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -86,38 +150,37 @@
 </div>
 
 <div class="section">
-  <h2>📈 Live Crop Listings</h2>
+  <h2>Live Crop Listings</h2>
+  <div class="crop-grid">
 
-  <div class="crop-card">
-    <h3>🌾 Rice</h3>
-    <p class="price">Rp 5,200/kg</p>
-    <p>Trending ↓ | Last updated: 08:45 WIB</p>
-    <button>Buy Now</button>
-    <button>Place Bid</button>
+    <div class="crop-card">
+      <h3>Rice</h3>
+      <div class="price">Rp 5,200/kg</div>
+      <div class="actions">
+        <button>Buy</button>
+        <button>Bid</button>
+      </div>
+    </div>
+
+    <div class="crop-card">
+      <h3>Corn</h3>
+      <div class="price">Rp 3,800/kg</div>
+      <div class="actions">
+        <button>Buy</button>
+        <button>Bid</button>
+      </div>
+    </div>
+
+    <div class="crop-card">
+      <h3>Chili</h3>
+      <div class="price">Rp 12,000/kg</div>
+      <div class="actions">
+        <button>Buy</button>
+        <button>Bid</button>
+      </div>
+    </div>
+
   </div>
-
-  <div class="crop-card">
-    <h3>🌽 Corn</h3>
-    <p class="price">Rp 3,800/kg</p>
-    <p>Trending ↑ | Last updated: 08:45 WIB</p>
-    <button>Buy Now</button>
-    <button>Place Bid</button>
-  </div>
-
-</div>
-
-<div class="section">
-  <h2>🧑‍🌾 Featured Farmers</h2>
-  <ul>
-    <li>Pak Darto – Banyumas – 🌾 Rice, 🌶️ Chili</li>
-    <li>Bu Sari – Lampung – 🌽 Corn, 🥔 Cassava</li>
-  </ul>
-</div>
-
-<div class="section">
-  <h2>📊 Market Sentiment</h2>
-  <p>🌶️ Chili is surging due to seasonal demand</p>
-  <p>🌾 Rice prices expected to dip post-harvest</p>
 </div>
 
 <footer>
@@ -126,3 +189,4 @@
 
 </body>
 </html>
+
